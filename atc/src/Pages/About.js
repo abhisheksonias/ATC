@@ -139,18 +139,18 @@ const About = () => {
               <p className="text-gray-700 mb-6">
                 Today, we work with clients across industries, from startups to established brands, all united by a desire to create meaningful connections with their audiences through compelling digital experiences.
               </p>
-              <div className="flex space-x-8 flex-wrap justify-center md:justify-start">
-                <div className="text-center mb-4 md:mb-0">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center md:justify-start gap-6">
+                <div className="text-center">
                   <h3 className="text-3xl font-bold text-blue-600">120+</h3>
-                  <p className="text-gray-600">YouTube videos edited</p>
+                  <p className="text-gray-600 text-sm">YouTube videos edited</p>
                 </div>
-                <div className="text-center mb-4 md:mb-0">
+                <div className="text-center">
                   <h3 className="text-3xl font-bold text-blue-600">550+</h3>
-                  <p className="text-gray-600">Short videos edited</p>
+                  <p className="text-gray-600 text-sm">Short videos edited</p>
                 </div>
-                <div className="text-center mb-4 md:mb-0">
+                <div className="text-center">
                   <h3 className="text-3xl font-bold text-blue-600">250+</h3>
-                  <p className="text-gray-600">hour of content edited</p>
+                  <p className="text-gray-600 text-sm">hours of content edited</p>
                 </div>
               </div>
             </div>
@@ -166,8 +166,8 @@ const About = () => {
         viewport={{ once: true }}
         className="py-8 px-8 bg-white"
       >
-        <div className="bg-black rounded-3xl p-5 mt-5 shadow-lg border border-black">
           {/* Outer Black Rounded Box */}
+        <div className="bg-black rounded-3xl p-5 mt-5 shadow-lg border border-black">
           <div className=" container mx-auto px-6 py-16">
             {/* Section Title */}
             <div style={sectionTitleStyle}>

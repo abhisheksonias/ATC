@@ -303,7 +303,7 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <div className="bg-gradient-to-r from-white via-gray-100 to-white text-black border border-gray-700 rounded-full px-8 py-2 mx-auto mb-16 max-w-fit shadow-md relative">
             <h2 className="text-3xl font-bold text-center tracking-wider flex items-center gap-2">
-              Frequently Asked Questions
+              FAQ
               <span className="w-5 h-5 ml-2 bg-purple-500 rounded-full inline-block shadow-inner"></span>
             </h2>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 rounded-full blur-md -z-10"></div>
