@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        {/* Removed Navbar from here */}
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

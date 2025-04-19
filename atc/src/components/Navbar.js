@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="mt-5 sticky top-0 z-50 py-0.5">
+    <nav className="mt-5 sticky top-0 z-50 py-0.5 mx-5 ">
 
       <div className=" bg-white max-w-screen-xl h-[90px] mx-auto border-2 rounded-full border-black flex items-center justify-between px-6">
 
@@ -62,16 +62,20 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden fixed top-[90px] left-0 w-full bg-white shadow-xl border-t border-black z-40 animate-slide-down">
           <div className="flex flex-col space-y-6 py-6 px-6 text-lg font-semibold text-black">
-            {["Home", "About", "Services", "Contact"].map((label, idx) => (
+          {["Home", "About", "Services", "Contact"].map((label, idx) => {
+            const path = label === "Home" ? "/" : `/${label.toLowerCase().replace(/\s+/g, "")}`;
+            return (
               <Link
                 key={idx}
-                to={`/${label.toLowerCase().replace(/\s+/g, "")}`}
+                to={path}
                 className="hover:text-blue-600 transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 {label}
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
               </Link>
-            ))}
+            );
+          })}
             <Link
               to="/contact"
               className="mt-4 text-center p-3 bg-black text-white rounded-lg border-2 border-black hover:bg-white hover:text-black transition-all"

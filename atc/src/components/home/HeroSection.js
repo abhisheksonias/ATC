@@ -26,7 +26,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-100 to-gray-300 md:hidden" />
 
       {/* Navbar on top layer */}
-      <div className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 lg:px-10">
+      <div className="fixed top-0 left-0 w-full z-50"> 
         <Navbar />
       </div>
 
