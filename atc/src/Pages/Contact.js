@@ -7,7 +7,7 @@ const Contact = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,7 +28,7 @@ const Contact = () => {
     // In a real application, you would send this data to your backend
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We will get back to you soon.');
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -42,8 +42,8 @@ const Contact = () => {
   // Fade in animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.6 }
     }
@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <div className="bg-white text-black">
       {/* Contact Hero Section */}
-      <motion.section 
+      <motion.section
         className="bg-white text-black py-24 relative overflow-hidden"
         initial="hidden"
         animate="visible"
@@ -73,7 +73,7 @@ const Contact = () => {
           <div className="h-full w-full bg-grid-pattern"></div>
         </div>
         <div className="container mx-auto px-6 text-center relative z-10">
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-6xl font-bold mb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const Contact = () => {
           >
             Contact Us
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -94,16 +94,16 @@ const Contact = () => {
 
       {/* Contact Form Section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <motion.div 
+        <div className=" container mx-auto px-6">
+          <motion.div
             className="flex flex-col lg:flex-row"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
           >
-            <motion.div 
-              className="lg:w-1/2 mb-12 lg:mb-0 lg:pr-16"
+            <motion.div
+              className="justify-start lg:w-1/2 mb-12 lg:mb-0 lg:pr-16"
               variants={fadeIn}
             >
               <div className="bg-gradient-to-r from-white via-gray-100 to-white text-black border border-gray-700 rounded-full px-8 py-2 mx-auto mb-16 max-w-fit shadow-md relative">
@@ -116,8 +116,8 @@ const Contact = () => {
               <p className="text-gray-800 mb-10 text-lg">
                 Fill out the form and one of our experts will get back to you within 24 hours to discuss your needs and how we can help.
               </p>
-              
-              <motion.div 
+
+              <motion.div
                 className="mb-10 bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -136,8 +136,8 @@ const Contact = () => {
                   <p className="text-gray-800">hello@atcagency.com</p>
                 </div>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -147,13 +147,13 @@ const Contact = () => {
                 <p className="text-gray-800">Saturday - Sunday: Closed</p>
               </motion.div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="lg:w-1/2 bg-gray-50 p-10 rounded-lg shadow-md border border-gray-100"
               variants={fadeIn}
             >
               <form onSubmit={handleSubmit}>
-                <motion.div 
+                <motion.div
                   className="mb-6"
                   whileInView={{ x: [50, 0], opacity: [0, 1] }}
                   viewport={{ once: true }}
@@ -170,8 +170,8 @@ const Contact = () => {
                     required
                   />
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="mb-6"
                   whileInView={{ x: [50, 0], opacity: [0, 1] }}
                   viewport={{ once: true }}
@@ -188,8 +188,8 @@ const Contact = () => {
                     required
                   />
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="mb-6"
                   whileInView={{ x: [50, 0], opacity: [0, 1] }}
                   viewport={{ once: true }}
@@ -205,8 +205,8 @@ const Contact = () => {
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                   />
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="mb-6"
                   whileInView={{ x: [50, 0], opacity: [0, 1] }}
                   viewport={{ once: true }}
@@ -223,8 +223,8 @@ const Contact = () => {
                     required
                   />
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="mb-8"
                   whileInView={{ x: [50, 0], opacity: [0, 1] }}
                   viewport={{ once: true }}
@@ -241,7 +241,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </motion.div>
-                
+
                 <motion.button
                   type="submit"
                   className="bg-black text-white px-8 py-4 rounded-md font-medium hover:bg-gray-900 transition duration-300 w-full shadow-sm"
@@ -257,7 +257,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <motion.section 
+      <motion.section
         className="py-20 bg-gray-100"
         initial="hidden"
         whileInView="visible"
@@ -265,23 +265,35 @@ const Contact = () => {
         variants={fadeIn}
       >
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-12 border-b-2 border-black pb-4 inline-block">Find Us</h2>
-          <motion.div 
+          <div className="bg-gradient-to-r from-white via-gray-100 to-white text-black border border-gray-700 rounded-full px-8 py-2 mx-auto mb-16 max-w-fit shadow-md relative">
+            <h2 className="text-3xl font-bold text-center tracking-wider flex items-center gap-2">
+              Find Us
+              <span className="w-5 h-5 ml-2 bg-amber-500 rounded-full inline-block shadow-inner"></span>
+            </h2>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 rounded-full blur-md -z-10"></div>
+          </div>
+
+          <motion.div
             className="bg-white h-96 rounded-lg flex items-center justify-center shadow-lg overflow-hidden"
             whileHover={{ scale: 1.01 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            {/* In a real application, you would embed a Google Map or similar here */}
-            <div className="text-gray-800 text-xl">
-              <p>Interactive Map would be displayed here</p>
-              <p className="text-sm mt-2">(Using placeholder for demonstration purposes)</p>
-            </div>
+            <iframe
+              title="Marwadi University Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9014.293174111872!2d70.79542567877449!3d22.369473301539596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c972761ce515%3A0x3651e3fe1e9df4f8!2sMarwadi%20University!5e0!3m2!1sen!2sin!4v1745086918630!5m2!1sen!2sin"
+              className="w-full h-full"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </motion.div>
+
         </div>
       </motion.section>
 
       {/* FAQ Section */}
-      <motion.section 
+      <motion.section
         className="py-24 bg-white"
         initial="hidden"
         whileInView="visible"
@@ -289,10 +301,16 @@ const Contact = () => {
         variants={staggerContainer}
       >
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-16 border-b-2 border-black pb-4 inline-block">Frequently Asked Questions</h2>
-          
+          <div className="bg-gradient-to-r from-white via-gray-100 to-white text-black border border-gray-700 rounded-full px-8 py-2 mx-auto mb-16 max-w-fit shadow-md relative">
+            <h2 className="text-3xl font-bold text-center tracking-wider flex items-center gap-2">
+              Frequently Asked Questions
+              <span className="w-5 h-5 ml-2 bg-purple-500 rounded-full inline-block shadow-inner"></span>
+            </h2>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 rounded-full blur-md -z-10"></div>
+          </div>
+
           <div className="max-w-3xl mx-auto">
-            <motion.div 
+            <motion.div
               className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               variants={fadeIn}
               whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
@@ -302,8 +320,8 @@ const Contact = () => {
                 We offer a range of digital marketing services including short and long-form video editing, thumbnail design, social media management, and strategic marketing consulting.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               variants={fadeIn}
               whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
@@ -313,8 +331,8 @@ const Contact = () => {
                 Our turnaround times vary by project scope. Short-form content typically takes 2-3 business days, while more complex projects may take 1-2 weeks. We always work with you to meet your deadlines.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               variants={fadeIn}
               whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
@@ -324,8 +342,8 @@ const Contact = () => {
                 Absolutely! We understand every brand has unique needs. We'll work with you to create a customized package that aligns with your goals and budget.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               variants={fadeIn}
               whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}

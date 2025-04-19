@@ -42,7 +42,7 @@ const About = () => {
   const sectionTitleStyle = {
     background: 'linear-gradient(to right, white, #f3f4f6, white)', // Tailwind's gray-100
     color: 'black',
-    border: '1px solid #d1d5db', // Tailwind's border-gray-300
+    border: '1px solid #000000', // Tailwind's border-gray-300
     borderRadius: '2rem', // Tailwind's rounded-full (approximation)
     padding: '0.5rem 2rem', //  px-8 py-2  approximation
     margin: '0 auto 4rem auto', //  mb-16  approximation
