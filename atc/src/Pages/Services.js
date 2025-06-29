@@ -25,7 +25,7 @@ const Services = () => {
       description: 'Create engaging, scroll-stopping content for TikTok, Instagram Reels, and YouTube Shorts that captures attention in seconds.',
       features: [
         'Trending format adaptation',
-        'Music selection and syncing',
+        'Packed with motion graphics',
         'Caption and text overlay design',
         'Quick turnaround times',
         'Platform-specific optimization'

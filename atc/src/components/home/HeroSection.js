@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div
         className={`absolute inset-0 z-0 hidden xl:block ${imageLoaded ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-500`}
-        style={imageLoaded ? { backgroundImage: "url('/ATC.svg')", backgroundSize: 'cover', backgroundPosition: 'center' } : {}}
+        style={imageLoaded ? { backgroundImage: "url('/hero.svg')", backgroundSize: 'cover', backgroundPosition: 'center' } : {}}
       />
 
       {/* Mobile fallback gradient background */}
@@ -30,8 +30,8 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content wrapper */}
-      <div className="relative z-10 container mx-auto px-6 w-full">
-        <div className="flex flex-col items-stretch justify-evenly  md:flex-row">
+      <div className="relative z-10 container mx-auto px-2 w-full">
+        <div className="flex flex-col items-stretch justify-start  md:flex-row">
           {/* Left side - Text content */}
           <div className="w-full md:w-1/2 mt-0 mb-8 md:mb-0">
             <h1 className="text-black text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">
