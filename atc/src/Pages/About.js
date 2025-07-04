@@ -132,10 +132,18 @@ const About = () => {
                 <div style={sectionTitleBlurDivStyle}></div>
               </div>
               <p className="text-gray-700 mb-4">
-                Founded in 2024, ATC began with a simple mission: to help brands cut through the digital noise with strategic, creative content that drives real results.
+                Founded in 2023, ATC was born with a clear vision: to
+                transform raw footage into compelling stories that cut
+                through the digital clutter.
               </p>
               <p className="text-gray-700 mb-4">
-                What started as a small team of passionate marketers has grown into a full-service agency with expertise spanning video production, social media management, and digital strategy.
+                What began as a tight-knit team of creative editors and
+                storytellers has evolved into a full-service post-production
+                powerhouse — mastering everything from high-impact
+                video editing and motion graphics to sound design and
+                color grading. Today, we help creators and brands elevate
+                their content with visuals that don't just scroll by — they
+                stop thumbs.
               </p>
               <p className="text-gray-700 mb-6">
                 Today, we work with clients across industries, from startups to established brands, all united by a desire to create meaningful connections with their audiences through compelling digital experiences.

@@ -2,7 +2,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import CTASection from '../components/home/CTASection';
 import { motion } from 'framer-motion';
-import Faq from '.Footer./components/Faq'; // Assuming you have a Faq component
+import Faq from '../components/Faq'; // Assuming you have a Faq component
 
 const Contact = () => {
   useLayoutEffect(() => {
