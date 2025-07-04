@@ -19,92 +19,93 @@ const Services = () => {
     });
   }, []);
 
-  const services = [
-    {
-      title: 'Short Form Video Editing',
-      description: 'Create engaging, scroll-stopping content for TikTok, Instagram Reels, and YouTube Shorts that captures attention in seconds.',
-      features: [
-        'Trending format adaptation',
-        'Packed with motion graphics',
-        'Caption and text overlay design',
-        'Quick turnaround times',
-        'Platform-specific optimization'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Long Form Video Editing',
-      description: 'Develop polished, professional long-form content that tells your brand story and builds deeper audience connections.',
-      features: [
-        'Comprehensive story development',
-        'Advanced editing techniques',
-        'Color grading and audio enhancement',
-        'Custom graphics and animations',
-        'SEO optimization for discoverability'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Thumbnail Designing',
-      description: 'Stand out in crowded feeds with eye-catching thumbnails that drive clicks and increase video performance.',
-      features: [
-        'High-impact visual composition',
-        'Text that converts to clicks',
-        'Brand consistency across content',
-        'A/B testing options',
-        'Platform-specific size optimization'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Social Media Management',
-      description: 'Build your online presence with strategic management that grows your audience and drives meaningful engagement.',
-      features: [
-        'Content calendar development',
-        'Community engagement',
-        'Performance analytics and reporting',
-        'Trend identification and implementation',
-        'Cross-platform strategy alignment'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Social Media Management',
-      description: 'Build your online presence with strategic management that grows your audience and drives meaningful engagement.',
-      features: [
-        'Content calendar development',
-        'Community engagement',
-        'Performance analytics and reporting',
-        'Trend identification and implementation',
-        'Cross-platform strategy alignment'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Social Media Management',
-      description: 'Build your online presence with strategic management that grows your audience and drives meaningful engagement.',
-      features: [
-        'Content calendar development',
-        'Community engagement',
-        'Performance analytics and reporting',
-        'Trend identification and implementation',
-        'Cross-platform strategy alignment'
-      ],
-      videoUrl: "/video.mp4"
-    },
-    {
-      title: 'Social Media Management',
-      description: 'Build your online presence with strategic management that grows your audience and drives meaningful engagement.',
-      features: [
-        'Content calendar development',
-        'Community engagement',
-        'Performance analytics and reporting',
-        'Trend identification and implementation',
-        'Cross-platform strategy alignment'
-      ],
-      videoUrl: "/video.mp4"
-    },
-  ];
+    const services = [
+      {
+        "title": "Short Form Video Editing",
+        "description": "Create engaging, scroll-stopping content for TikTok, Instagram Reels, and YouTube Shorts that captures attention in seconds.",
+        "features": [
+          "Trending format adaptation",
+          "Packed with motion graphics",
+          "Caption and text overlay design",
+          "Quick turnaround times",
+          "Platform-specific optimization"
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Long Form Video Editing",
+        "description": "Develop polished, professional long-form content that tells your brand story and builds deeper audience connections.",
+        "features": [
+          "Comprehensive story development",
+          "Advanced editing techniques",
+          "Color grading and audio enhancement",
+          "Custom graphics and animations",
+          "SEO optimization for discoverability"
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Thumbnail Designing",
+        "description": "Stand out in crowded feeds with eye-catching thumbnails that drive clicks and increase video performance.",
+        "features": [
+          "High-impact visual composition",
+          "Text that converts to clicks",
+          "Brand consistency across content",
+          "A/B testing options",
+          "Platform-specific size optimization"
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Social Media Management",
+        "description": "Build your online presence with strategic management that grows your audience and drives meaningful engagement.",
+        "features": [
+          "Content calendar development",
+          "Community engagement",
+          "Performance analytics and reporting",
+          "Trend identification and implementation",
+          "Cross-platform strategy alignment"
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Podcast Video Editing",
+        "description": "Turn raw recordings into polished, platform-ready podcast episodes — with visuals that elevate the conversation.",
+        "features": [
+          "Audio cleanup and enhancement",
+          "Multi-cam video edits (Zoom/Studio)",
+          "Branded video templates and intros",
+          "Shorts and Reels for episode highlights",
+          "Platform formatting for YouTube, Spotify, etc."
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Whiteboard Video Editing",
+        "description": "Simplify complex ideas with clear, captivating whiteboard animations that educate and engage.",
+        "features": [
+          "Script consultation and storyboard support",
+          "Custom illustrations and transitions",
+          "Voiceover syncing and background music",
+          "Branding integration and call-to-actions",
+          "Delivery in HD/4K for YouTube & presentations"
+        ],
+        "videoUrl": "/video.mp4"
+      },
+      {
+        "title": "Cashcow Video Editing",
+        "description": "Build your online presence with strategic management that grows your audience and drives meaningful engagement.",
+        "features": [
+          "Script-to-screen video editing",
+          "Stock footage + voiceover integration",
+          "Engaging hooks & retention-boosting pacing",
+          "High-converting thumbnails (optional add-on)",
+          "SEO-optimized formatting and metadata"
+        ],
+        "videoUrl": "/video.mp4"
+      }
+    ];
+
 
   // const fadeInUp = {
   //   hidden: { opacity: 0, y: 20 },

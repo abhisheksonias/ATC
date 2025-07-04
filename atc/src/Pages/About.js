@@ -11,15 +11,15 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: 'Archit Chaudhry',
+      name: 'ANANYA AADITYA',
       position: 'Founder & CEO',
-      bio: 'With over 15 years in digital marketing, Alex founded ATC with a vision to blend strategy with creativity.',
+      bio: "A visionary editor with over 5 years of experience, Ananya built this agency on precision, passion, and purpose. From tight timelines to bold storytelling, he knows how to turn raw footage into real impact. Whether it's structuring complex edits or mentoring the team through creative chaos, Ananya’s calm clarity keeps us sharp — and always a few steps ahead",
       image: '/team.svg',
     },
     {
-      name: 'Taniya Sharma',
-      position: 'Creative Director',
-      bio: 'Jamie leads our creative team with an eye for design and a passion for storytelling across digital platforms.',
+      name: "Taniya Sharma",
+      position: "Creative Director",
+      bio: "Tanya is the creative pulse behind every project. The ideas? Hers. The seamless execution? Also her. She makes sure the wildest creative sparks turn into scroll-stopping visuals. From brainstorming sessions to delivering polished perfection, Tanya ensures that our post- production pipeline flows as smooth as the transitions she obsesses over.",
       image: '/team.svg',
     },
   ];
@@ -150,16 +150,16 @@ const About = () => {
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center md:justify-start gap-6">
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">120+</h3>
-                  <p className="text-gray-600 text-sm">YouTube videos edited</p>
+                  <h3 className="text-3xl font-bold text-blue-600">1985+</h3>
+                  <p className="text-gray-600 text-sm">Long form videos edits</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">550+</h3>
-                  <p className="text-gray-600 text-sm">Short videos edited</p>
+                  <h3 className="text-3xl font-bold text-blue-600">1570+</h3>
+                  <p className="text-gray-600 text-sm">Short form videos edits</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">250+</h3>
-                  <p className="text-gray-600 text-sm">hours of content edited</p>
+                  <h3 className="text-3xl font-bold text-blue-600">10527+</h3>
+                  <p className="text-gray-600 text-sm">hours of content created</p>
                 </div>
               </div>
             </div>
