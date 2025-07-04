@@ -7,8 +7,8 @@ const Footer = () => {
   // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.5 }
     }
@@ -36,21 +36,21 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-amber-500 opacity-80"></div>
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-900 rounded-full opacity-5 blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-amber-700 rounded-full opacity-5 blur-3xl"></div>
-      
+
       {/* Animated dots */}
-      <motion.div 
+      <motion.div
         className="absolute top-1/4 left-10 w-3 h-3 bg-blue-400 rounded-full opacity-20"
         animate={{ y: [0, 15, 0] }}
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
       />
-      <motion.div 
+      <motion.div
         className="absolute bottom-1/4 right-10 w-2 h-2 bg-amber-400 rounded-full opacity-20"
         animate={{ y: [0, -12, 0] }}
         transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut", delay: 0.5 }}
       />
 
       <div className="relative z-10 container mx-auto px-6">
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -60,21 +60,25 @@ const Footer = () => {
           {/* Logo and About */}
           <motion.div variants={fadeInUp} className="col-span-1 lg:col-span-1">
             <div className="bg-black bg-opacity-40 p-6 rounded-2xl backdrop-blur-sm border border-gray-800">
-              <img 
-                src="/ATC_Black_nobg.png" 
-                alt="ATC Logo" 
-                className="w-36 mb-6 drop-shadow-lg" 
+              <img
+                src="/ATC_Black_nobg.png"
+                alt="ATC Logo"
+                className="w-36 mb-6 drop-shadow-lg"
               />
               <p className="text-gray-400 leading-relaxed">
-                From content creation to targeted campaigns, we craft powerful, data-driven marketing solutions.
+                From concept to final
+                frame, we shape
+                visuals that captivate,
+                communicate and
+                connect.
               </p>
-              
+
               {/* Social Icons */}
               <div className="mt-6 flex space-x-3">
                 {socialLinks.map((social, index) => (
-                  <motion.a 
+                  <motion.a
                     key={index}
-                    href={social.url} 
+                    href={social.url}
                     whileHover={{ y: -3, scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="w-10 h-10 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center transition-colors duration-300"
@@ -94,7 +98,7 @@ const Footer = () => {
                 <span className="w-2 h-8 bg-blue-500 mr-3 rounded-full"></span>
                 Quick Links
               </h3>
-              <motion.ul 
+              <motion.ul
                 className="space-y-3"
                 variants={staggerChildren}
                 initial="hidden"
@@ -102,8 +106,8 @@ const Footer = () => {
               >
                 {['Home', 'About', 'Services', 'Contact'].map((item, index) => (
                   <motion.li key={index} variants={fadeInUp}>
-                    <Link 
-                      to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} 
+                    <Link
+                      to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                       className="group flex items-center text-gray-300 hover:text-white transition-colors duration-300"
                     >
                       <span className="w-0 h-0.5 bg-blue-400 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
@@ -122,12 +126,12 @@ const Footer = () => {
                 <span className="w-2 h-8 bg-amber-500 mr-3 rounded-full"></span>
                 Services
               </h3>
-              <motion.ul 
+              <motion.ul
                 className="space-y-3"
                 variants={staggerChildren}
                 initial="hidden"
                 whileInView="visible"
-                
+
               >
                 {[
                   'Short Form Video Editing',
@@ -136,13 +140,13 @@ const Footer = () => {
                   'Social Media Management'
                 ].map((item, index) => (
                   <motion.li key={index} variants={fadeInUp}>
-                    <Link 
-                      to="/services" 
+                    <Link
+                      to="/services"
                       className="group flex items-center text-gray-300 hover:text-white transition-colors duration-300"
                     >
                       <span className="w-0 h-0.5 bg-amber-400 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
                       {item}
-                      
+
                     </Link>
                   </motion.li>
                 ))}
@@ -176,7 +180,7 @@ const Footer = () => {
                   <div>
                     <p className="text-gray-400">Call Us</p>
                     <a href="tel:+918789107816" className="text-white hover:text-amber-400 transition-colors">
-                    +91 87891 07816
+                      +91 87891 07816
                     </a>
                   </div>
                 </div>
@@ -214,7 +218,7 @@ const Footer = () => {
         </motion.div> */}
 
         {/* Bottom */}
-        <motion.div 
+        <motion.div
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"

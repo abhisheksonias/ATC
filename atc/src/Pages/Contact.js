@@ -2,6 +2,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import CTASection from '../components/home/CTASection';
 import { motion } from 'framer-motion';
+import Faq from '.Footer./components/Faq'; // Assuming you have a Faq component
 
 const Contact = () => {
   useLayoutEffect(() => {
@@ -125,15 +126,16 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-5 border-l-4 border-black pl-3">Our Office</h3>
                 <div className="flex items-start mb-4 hover:translate-x-1 transition-transform duration-300">
                   <div className="text-black mr-4 text-xl">📍</div>
-                  <p className="text-gray-800">123 Creative Drive, Digital City, 10001</p>
+                  <p className="text-gray-800">Madhapar Circle, 150 ft ring
+                     root. 360003, Rajkot, Gujarat</p>
                 </div>
                 <div className="flex items-start mb-4 hover:translate-x-1 transition-transform duration-300">
                   <div className="text-black mr-4 text-xl">📞</div>
-                  <p className="text-gray-800">+1 (555) 123-4567</p>
+                  <p className="text-gray-800">+91 8789107816, +91 9942160795</p>
                 </div>
                 <div className="flex items-start hover:translate-x-1 transition-transform duration-300">
                   <div className="text-black mr-4 text-xl">✉️</div>
-                  <p className="text-gray-800">hello@atcagency.com</p>
+                  <p className="text-gray-800">info@atcagency.in</p>
                 </div>
               </motion.div>
 
@@ -291,72 +293,7 @@ const Contact = () => {
 
         </div>
       </motion.section>
-
-      {/* FAQ Section */}
-      <motion.section
-        className="py-24 bg-white"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={staggerContainer}
-      >
-        <div className="container mx-auto px-6">
-          <div className="bg-gradient-to-r from-white via-gray-100 to-white text-black border border-gray-700 rounded-full px-8 py-2 mx-auto mb-16 max-w-fit shadow-md relative">
-            <h2 className="text-3xl font-bold text-center tracking-wider flex items-center gap-2">
-              FAQ
-              <span className="w-5 h-5 ml-2 bg-purple-500 rounded-full inline-block shadow-inner"></span>
-            </h2>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 rounded-full blur-md -z-10"></div>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <motion.div
-              className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              variants={fadeIn}
-              whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
-            >
-              <h3 className="text-xl font-bold mb-3 border-l-4 border-black pl-3">What services do you offer?</h3>
-              <p className="text-gray-800">
-                We offer a range of digital marketing services including short and long-form video editing, thumbnail design, social media management, and strategic marketing consulting.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              variants={fadeIn}
-              whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
-            >
-              <h3 className="text-xl font-bold mb-3 border-l-4 border-black pl-3">How quickly can you deliver content?</h3>
-              <p className="text-gray-800">
-                Our turnaround times vary by project scope. Short-form content typically takes 2-3 business days, while more complex projects may take 1-2 weeks. We always work with you to meet your deadlines.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="mb-10 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              variants={fadeIn}
-              whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
-            >
-              <h3 className="text-xl font-bold mb-3 border-l-4 border-black pl-3">Do you offer custom packages?</h3>
-              <p className="text-gray-800">
-                Absolutely! We understand every brand has unique needs. We'll work with you to create a customized package that aligns with your goals and budget.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              variants={fadeIn}
-              whileHover={{ scale: 1.02, backgroundColor: '#f3f3f3' }}
-            >
-              <h3 className="text-xl font-bold mb-3 border-l-4 border-black pl-3">How do I get started?</h3>
-              <p className="text-gray-800">
-                Simply fill out the contact form above or call us directly. We'll schedule a free consultation to discuss your needs and how we can help your brand grow.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
+      <Faq/>
       <CTASection />
     </div>
   );

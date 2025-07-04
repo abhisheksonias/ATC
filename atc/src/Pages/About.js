@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Lightbulb, BarChart } from 'lucide-react';
 import CTASection from '../components/home/CTASection';
+import ProcessSection from '../components/home/ProcessSection';
 
 const About = () => {
   useLayoutEffect(() => {
@@ -304,6 +305,7 @@ const About = () => {
       </motion.section>
 
 
+      <ProcessSection />
       <CTASection />
     </div>
   );

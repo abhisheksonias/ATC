@@ -2,12 +2,12 @@
 import React, { useLayoutEffect } from 'react';
 import HeroSection from '../components/home/HeroSection';
 import ServicesSection from '../components/home/ServiceSection';
-import ProcessSection from '../components/home/ProcessSection';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 import CTASection from '../components/home/CTASection';
 import CTASection2 from '../components/home/CTASection2';
 import Video from '../components/home/video';
-
+import Clientslider from '../components/home/Clientslider';
+import CheckOurWork from '../components/home/Checkourwork';
 
 const Home = () => {
   useLayoutEffect(() => {
@@ -19,7 +19,8 @@ const Home = () => {
       <CTASection2 />
       <Video />
       <ServicesSection />
-      <ProcessSection />
+      <Clientslider />
+      <CheckOurWork />
       <TestimonialsSection />
       <CTASection />
     </div>

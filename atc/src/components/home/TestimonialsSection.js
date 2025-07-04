@@ -7,19 +7,19 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: 'Abshar Abdullah',
-      position: 'Marketing Director, TechStart',
+      position: 'CEO, Encreators',
       content: 'Working with ATC has transformed our digital presence. Their strategic approach to content creation has increased our engagement by 200% in just three months.',
       image: '/AbsharAbdullah.png',
     },
     {
       name: 'Tony Jefferies',
-      position: 'CEO, GrowthBrand',
+      position: 'Olympic Bronze Medalist Boxer',
       content: 'The creative team at ATC truly understands our brand voice. They have delivered content that not only looks great but drives real results for our business.',
       image: '/TonyJefferies.png',
     },
     {
       name: 'Sarah Jefferies',
-      position: 'Influencer & Content Creator',
+      position: 'Nurse based in California',
       content: 'ATC helped me scale my content creation while maintaining quality. Their video editing and thumbnail design services have been game-changing for my channel growth.',
       image: '/SarahJefferies.png',
     }
