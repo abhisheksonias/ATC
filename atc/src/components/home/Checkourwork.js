@@ -5,11 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Sample YouTube video links - using the provided link
 const videoLinks = [
-  { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 1', channelName: 'Creative Studio', subscribers: '125K' },
-  { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 2', channelName: 'Digital Media', subscribers: '98K' },
-  { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 3', channelName: 'Video Pro', subscribers: '203K' },
-  { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 4', channelName: 'Content Creators', subscribers: '167K' },
-  { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 5', channelName: 'Media House', subscribers: '245K' },
+  { id: 'W0oxbv3820I', title: 'Our Work Sample 1', channelName: 'Tony Jefferies', subscribers: '2.89M', logo: '/Tony_Jefferies.png' },
+  { id: '_suns2rGt2U', title: 'Our Work Sample 2', channelName: 'Tony Jefferies', subscribers: '2.89M', logo: '/Tony_Jefferies.png' },
+  { id: 'E2noZheryXg', title: 'Our Work Sample 3', channelName: 'Sarah Jefferies', subscribers: '66K', logo: '/Sarah_Jefferies.png' },
+  { id: 'UjYfUgWkEB4', title: 'Our Work Sample 4', channelName: 'Sarah Jefferies', subscribers: '66K', logo: '/Sarah_Jefferies.png' },
+  // { id: 'JgDNFQ2RaLQ', title: 'Our Work Sample 5', channelName: 'Media House', subscribers: '245K', logo: '/logo.png' },
 ];
 
 const CheckOurWork = () => {
@@ -94,14 +94,14 @@ const CheckOurWork = () => {
                       <div className="relative group">
                         <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 p-1 shadow-lg">
                           <img
-                            src="/logo.png"
+                            src={video.logo}
                             alt={video.channelName}
                             className="w-full h-full rounded-full object-cover border-2 border-white"
                             loading="lazy"
                           />
                         </div>
                         {/* Enhanced status indicator */}
-                        <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-3 border-white shadow-lg animate-pulse"></div>
+                        {/* <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-3 border-white shadow-lg animate-pulse"></div> */}
                         {/* Hover glow effect */}
                         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
                       </div>
@@ -116,7 +116,7 @@ const CheckOurWork = () => {
                             {video.subscribers} Subscribers
                           </p>
                           <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                          <span className="text-sm text-green-600 font-medium">Active</span>
+                          {/* <span className="text-sm text-green-600 font-medium">Active</span> */}
                         </div>
                       </div>
                       
