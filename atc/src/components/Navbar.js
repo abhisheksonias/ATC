@@ -8,9 +8,9 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="mt-5 sticky top-0 z-50 py-0.5 mx-5 ">
+    <nav className="mt-5 p-20 sticky top-0 z-50 py-0.5 mx-5 ">
 
-      <div className=" bg-white max-w-screen-xl h-[90px] mx-auto border-2 rounded-full border-black flex items-center justify-between px-6">
+      <div className=" bg-white max-w-screen-xl h-[70px] mx-auto border-2 rounded-full border-black flex items-center justify-between px-6">
 
         {/* Logo */}
         <Link to="/">
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className="p-3 text-white font-medium rounded-lg border-2 border-black transition-all duration-200 ease-in-out transform bg-black hover:bg-white hover:text-black hover:scale-105"
+            className="p-2 text-white font-small rounded-lg border-2 border-black transition-all duration-200 ease-in-out transform bg-black hover:bg-white hover:text-black hover:scale-105"
           >
             Schedule a Call
           </Link>
